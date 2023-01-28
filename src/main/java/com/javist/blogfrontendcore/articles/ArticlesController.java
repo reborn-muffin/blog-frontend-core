@@ -9,14 +9,14 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1/articles")
 public class ArticlesController {
-    private final ArticlesRepo articlesRepo;
+    private final ArticleService articleService;
 
-    public ArticlesController(ArticlesRepo articlesRepo) {
-        this.articlesRepo = articlesRepo;
+    public ArticlesController(ArticleService articleService) {
+        this.articleService = articleService;
     }
 
     @GetMapping
     public List<ArticleEntity> retrieveAllArticles(){
-        return articlesRepo.findAll();
+        return articleService.getAllArticles();
     }
 }
