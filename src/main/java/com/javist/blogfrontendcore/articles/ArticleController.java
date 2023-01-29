@@ -9,10 +9,10 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1/articles")
 @CrossOrigin(origins = "http://localhost:3000")
-public class ArticlesController {
+public class ArticleController {
     private final ArticleService articleService;
 
-    public ArticlesController(ArticleService articleService) {
+    public ArticleController(ArticleService articleService) {
         this.articleService = articleService;
     }
 
