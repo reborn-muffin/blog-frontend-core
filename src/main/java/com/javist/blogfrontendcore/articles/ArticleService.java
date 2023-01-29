@@ -11,7 +11,7 @@ import java.util.NoSuchElementException;
 public class ArticleService {
     private final ArticlesRepo articlesRepo;
 
-    List<ArticleEntity> getAllArticles(){
+    List<ArticleEntity> getAll(){
         return articlesRepo.findAll();
     }
 

@@ -18,7 +18,7 @@ public class ArticleController {
 
     @GetMapping
     public List<ArticleEntity> retrieveAllArticles(){
-        return articleService.getAllArticles();
+        return articleService.getAll();
     }
 
     @PostMapping
